@@ -3,6 +3,11 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
 const Navbar = () => {
+  const linkClass = ({ isActive }) =>
+    isActive
+      ? "bg-dark-gray text-white transition-transform duration-200 ease-in-out hover:scale-110 hover:bg-dark-gray px-2 py-1 rounded-md"
+      : "text-white transition-transform duration-200 ease-in-out hover:scale-110 hover:bg-dark-gray px-2 py-1 rounded-md";
+
   return (
     <nav className="bg-teal border-b">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -16,22 +21,13 @@ const Navbar = () => {
             </NavLink>
             <div className="md:ml-auto">
               <div className="flex space-x-8">
-                <NavLink
-                  to="/"
-                  className="text-white transition-transform duration-200 ease-in-out hover:scale-110 hover:bg-dark-gray px-2 py-1 rounded-md"
-                >
+                <NavLink to="/" className={linkClass}>
                   Home
                 </NavLink>
-                <NavLink
-                  to="/jobs"
-                  className="text-white transition-transform duration-200 ease-in-out hover:scale-110 hover:bg-dark-gray px-2 py-1 rounded-md"
-                >
+                <NavLink to="/jobs" className={linkClass}>
                   Jobs
                 </NavLink>
-                <NavLink
-                  to="/add-job"
-                  className="text-white transition-transform duration-200 ease-in-out hover:scale-110 hover:bg-dark-gray px-2 py-1 rounded-md"
-                >
+                <NavLink to="/add-job" className={linkClass}>
                   Add Job
                 </NavLink>
               </div>
