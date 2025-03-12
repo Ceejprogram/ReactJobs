@@ -1,2 +1,2 @@
 # ReactJobs
-A platform for React developers where they can post and find jobs.
+A platform for React developers where they can browse and list React related jobs.
