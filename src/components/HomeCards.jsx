@@ -4,11 +4,13 @@ import Card from "./Card";
 
 const HomeCards = () => {
   return (
-    <section className="py-6 bg-light-gray">
+    <section className="py-12 bg-light-gray">
       <div className="container-xl lg:container m-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
           <Card>
-            <h2 className="text-2xl font-bold text-dark-gray">For Developers</h2>
+            <h2 className="text-2xl font-bold text-dark-gray">
+              For Developers
+            </h2>
             <p className="mt-2 mb-4 text-dark-gray opacity-80">
               Browse our React jobs and start your career today
             </p>
