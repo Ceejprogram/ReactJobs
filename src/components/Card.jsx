@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ children, bg = "bg-[#EEEEEE]" }) => {
+const Card = ({ children, bg = "bg-white" }) => {
   return (
     <div
       className={`${bg} p-6 rounded-lg shadow-md transition-transform duration-200 ease-in-out hover:scale-105`}

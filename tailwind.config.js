@@ -13,11 +13,15 @@ export default {
         '70/30': '70% 30%',
       },
       colors: {
-        'dark-gray': '#393E46',    // Primary dark color for headers, nav, buttons
-        'teal': '#00ADB5',         // Accent color for buttons, highlights
-        'light-gray': '#EEEEEE',   // Neutral background color
-        'gray-hover': '#4A5159',   // Hover shade for dark-gray
-        'teal-dark': '#008A91',    // Hover shade for teal
+        'dark-gray': '#393E46',    
+        'teal': '#00ADB5',         
+        'light-gray': '#EEEEEE',   
+        'gray-hover': '#4A5159',   
+        'teal-dark': '#008A91',   
+      },
+      backgroundImage: {
+      
+        'teal-to-white': 'linear-gradient(to bottom, #00ADB5, #FFFFFF)',
       },
     },
   },

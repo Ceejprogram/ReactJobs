@@ -4,7 +4,7 @@ import Card from "./Card";
 
 const HomeCards = () => {
   return (
-    <section className="py-12 bg-light-gray">
+    <section className="py-12 bg-gradient-to-b from-white to-gray-200">
       <div className="container-xl lg:container m-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
           <Card>

@@ -6,7 +6,7 @@ const JobListings = ({ isHome = false }) => {
   const jobListings = isHome ? jobs.slice(0, 3) : jobs;
 
   return (
-    <section className="bg-[#EEEEEE] px-4 py-12">
+    <section className="bg-gradient-to-b from-gray-200 to-white px-4 py-12">
       <div className="container-xl lg:container m-auto">
         <h2 className="text-3xl font-bold text-[#393E46] mb-8 text-center">
           {isHome ? "Recent Jobs" : "Browse Jobs"}
